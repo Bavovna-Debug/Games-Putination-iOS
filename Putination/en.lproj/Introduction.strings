@@ -1,0 +1,47 @@
+/******************************************************************************/
+/*                                                                            */
+/*  Putination                                                                */
+/*                                                                            */
+/*  Copyright (c) 2014 Meine Werke. All rights reserved.                      */
+/*                                                                            */
+/******************************************************************************/
+
+"GAME_INTRODUCTION" =
+"Prologue
+
+„ ... Your country is recovering from the effects of the recent revolution and has not yet harmoniously functioning government system neither defense services. You are a military officer and commander of the last, not yet stolen by your opponent, battle tank ... “
+
+«Hot War I» is a game based on GPS data, that you play in the real world.
+
+So, get off from your sofa, leave your room and go outside, because «they» are coming. And don’t forget to put on comfortable shoes (sport shoes would be the best choice), because you have to run and move a lot outside.
+
+Outside you have to be fast and always keep moving. Think of a tactic for defense, choose your targets precisely. Make sure that your tank can always receive GPS signals.
+
+An invasion from a neighboring country is underway. Defend your cities. Move with your iPhone/iPad through the real world and use the information on your radar to recognize movements of your opponent and missile attacks and to take countermeasures in time.
+
+For the motherland!
+
+* Game target:
+Successful defense of the cities.
+
+* End:
+The game is over when:
+- All cities are lost (occupied by opponent).
+- Your tank is destroyed.
+- Your tank has run out of fuel.
+
+* Game play:
+At the beginning of the game all objects are spread, based on a random algorithm, around in a range of about 1000 meters, starting from your own GPS-position. Opponent's tanks are moving towards your cities to capture them. Try to stop and destroy them before they reach their destination. Once your city is captured, there will be a turret tower build near it and the flag of the occupant will be hoisted. Such turrets are able to catch a target (your tank) from a range of almost 500 meters. The own firing range of your tank is 400 meters. To liberate a city again you have to destroy all the turrets around the city.
+
+* The game elements:
+- First aid box - Each collected first aid box repairs damage of 5 missiles.
+- Fuel canister - Your tank consumes fuel and must refuel from time to time. One canister delivers 10 liters of fuel (fuel tank capacity - 1000 liters).
+- Reinforced - Opponent's tanks open fire from a range of 200 meters.
+- Cities.
+
+All bonus objects that are not collected within 15 minutes, will be moved to a different location by supply aircraft (for example, objects which are in existing buildings or other inaccessible locations).
+
+Safety:
+The game in the real world includes the fact that you are not alone. Always be sure of your surrounding, take care of the traffic situation.
+
+Thank you for your participation in the fight for freedom and independence.";

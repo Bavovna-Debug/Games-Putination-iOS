@@ -1,0 +1,55 @@
+/******************************************************************************/
+/*                                                                            */
+/*  Putination                                                                */
+/*                                                                            */
+/*  Copyright (c) 2014 Meine Werke. All rights reserved.                      */
+/*                                                                            */
+/******************************************************************************/
+
+"GAME_DESCRIPTION_CITY_TITLE" = "Stadt";
+"GAME_DESCRIPTION_CITY" =
+"Gegnerische Panzer bewegen sich auf deine Städte zu, um sie einzunehmen. Versuche sie daran zu hindern indem du sie zerstörst. Wird eine Stadt eingenommen, erhält die Stadt einen Gefechtsturm und die Flagge des Besetzers wird gehisst.
+
+Um eine Stadt wieder zu befreien musst du alle Gefechtstürme rund um die Stadt zerstören.
+
+Das Spiel ist zu Ende wenn alle deine Städte durch den Gegner besetzt sind.";
+
+"GAME_DESCRIPTION_PLAYER_TITLE" = "Dein Panzer";
+"GAME_DESCRIPTION_PLAYER" =
+"Um deinen Panzer durch das Gelände fahren zu lassen musst du in die ensprechende Richtung gehen (oder laufen oder auch fahren) - dein Panzer wird sich in der virtuellen Realität nur dann bewegen wenn du dich in der realen Welt bewegst.
+
+Um die Kanone auf das Ziel zu richten musst du dein iPhone/iPad in der realen Welt entsprechend drehen.
+
+Die eigene Schussreichweite deines Panzers liegt bei 400 Metern.";
+
+"GAME_DESCRIPTION_THEIR_TANK_TITLE" = "Gegnerische Panzer";
+"GAME_DESCRIPTION_THEIR_TANK" =
+"Um die gegnerische Panzer anzuhalten reicht ein Treffer in das Fahrwerk. Ein getroffener Panzer kann nicht mehr fahren, kann aber weiterhin schießen. Um den Panzer vollständig außer Betrieb zu setzen wird ein zweiter Schuss in den Turm erforderlich.
+
+Gegnerische Panzer feuern bereits ab 200 Meter Entfernung auf dein Panzer mit einem Schuss alle 8..10 Sekunden.";
+
+"GAME_DESCRIPTION_TURRET_TITLE" = "Gefechtsturm";
+"GAME_DESCRIPTION_TURRET" =
+"Gefechtstürme feuern bereits ab 500 Meter Entfernung auf dein Panzer mit einem Schuss alle 8..10 Sekunden.";
+
+"GAME_DESCRIPTION_EMERGENCY_BOX_TITLE" = "Erste-Hilfe-Kasten";
+"GAME_DESCRIPTION_EMERGENCY_BOX" =
+"Jeder eingesammelte Erste-Hilfe-Kasten repariert 5 Schadenspunkte.";
+
+"GAME_DESCRIPTION_FUEL_CANISTER_TITLE" = "Benzintropf";
+"GAME_DESCRIPTION_FUEL_CANISTER" =
+"Dein Panzer verbraucht Sprit und muss immer wieder nachtanken. Zum Spielbeginn wird dein Panzer mit nur 50 Liter Kraftstoff getankt. Das ist nicht viel, deshalb versuche möglichst viel Kraftstoff auf dem Gelände zu sammeln.
+
+Tankinhalt - 1000 Liter.
+
+Ein Kanister liefert 10 Liter Treibstoff.";
+
+"GAME_DESCRIPTION_ARMORY_BOX_TITLE" = "Munition";
+"GAME_DESCRIPTION_ARMORY_BOX" =
+"Jede Box enthält 10 Schuss Munition.";
+
+"GAME_DESCRIPTION_SUPPLY_AIRCRAFT_TITLE" = "Versorgungsflugzeuge";
+"GAME_DESCRIPTION_SUPPLY_AIRCRAFT" =
+"Luftwaffe versorgt dich mit allem, was du für einen langen Kampf brauchen kannst. Aus der Luft werden Erste-Hilfe-Kasten, Treibstoff und Munition geliefert.
+
+Alle Sammelobjekte, welche nicht innerhalb von 15 Minuten eingesammelt werden, werden an einem anderen Ort durch Flugzeuge neu platziert (zum Beispiel Objekte auf bestehenden Gebäuden oder anderen unzugänglichen Orten).";

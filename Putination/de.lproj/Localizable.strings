@@ -1,0 +1,18 @@
+/******************************************************************************/
+/*                                                                            */
+/*  Putination                                                                */
+/*                                                                            */
+/*  Copyright (c) 2014 Meine Werke. All rights reserved.                      */
+/*                                                                            */
+/******************************************************************************/
+
+"GAME_TITLE"                    = "«Heißer Krieg I»";
+"GAME_SUBTITLE"                 = "In der virtuellen Realität ... oder doch in der realen Welt?";
+
+"START_GAME"                    = "Zum Schlachtfeld";
+
+"GAME_OVER_BECAUSE_OF_LIFE"     = "Du hast es nicht überlebt!";
+"GAME_OVER_BECAUSE_OF_FUEL"     = "Kein Kraftstoff!";
+"GAME_OVER_ALL_CITIES_CAPTURED" = "«Sie» haben alle Städte erobert!";
+"GAME_OVER_MESSAGE"             = "Das Spiel ist zu Ende sobald: alle Städte verloren sind, dein Panzer zerstört ist, dein Panzer über keinen Kraftstoff mehr verfügt.";
+"GAME_OVER_BUTTON_LABEL"        = "OK";

@@ -1,0 +1,49 @@
+/******************************************************************************/
+/*                                                                            */
+/*  Putination                                                                */
+/*                                                                            */
+/*  Copyright (c) 2014 Meine Werke. All rights reserved.                      */
+/*                                                                            */
+/******************************************************************************/
+
+"GAME_INTRODUCTION" =
+"Prolog
+
+„ ... Dein Land erholt sich gerade von den Folgen einer Revolution und verfügt weder über einen funktionierenden Regierungsapparat noch über einen funktionierenden Verteidigungsapparat. Du bist Panzeroffizier und Kommandant des einzigen einsatzbereiten Kampfpanzers ... “
+
+«Heißer Krieg I» ist ein auf GPS-Daten basiertes Spiel, welches du in der realen Welt spielst.
+
+Also, verlasse dein Sofa, dein Zimmer und das Haus, denn «sie» kommen. Zieh dir bequeme Schuhe an (am besten Sportschuhe), denn laufen und bewegen wirst du dich viel.
+
+Draußen musst du schnell sein und immer in Bewegung bleiben. Überlege dir eine Taktik zur Verteidigung, wähle sorgsam deine Ziele aus. Achte darauf, dass dein Panzer stets GPS-Signale empfangen kann.
+
+Eine Invasion durch einen Nachbarstaat ist im Gange. Verteidige deine Städte. Bewege dich mit deinem iPhone/iPad durch die reale Welt und nutze dabei die Karteninformationen, um Sammelobjekte zu lokalisieren und einzusammeln sowie gegnerische Bewegungen und Raketenangriffe rechtzeitig zu erkennen und Gegenmaßnahmen zu ergreifen.
+
+Für das Vaterland!
+
+* Das Ziel:
+Erfolgreiche Verteidigung der Städte.
+
+* Ende:
+Das Spiel ist zu Ende, sobald:
+- Alle Städte verloren sind (durch den Gegner besetzt sind).
+- Dein Panzer zerstört ist.
+- Dein Panzer über keinen Kraftstoff mehr verfügt.
+
+Kann man das Spiel gewinnen? Leider nein, dein Gegner wird nie aufgeben und daher bleibt deinem Volk nur der Widerstand bis zum Letzten ...
+
+* Der Spielablauf:
+Bei Spielstart werden, von deiner eigenen GPS-Position ausgehend, auf Basis eines Zufallsalgorithmus, sämtliche Objekte in einem Radius von ca. 1000 Meter verteilt. Gegnerische Panzer bewegen sich auf deine Städte zu, um sie einzunehmen. Versuche sie daran zu hindern, indem du sie zerstörst. Wird eine Stadt eingenommen, erhält die Stadt einen Gefechtsturm und die Flagge des Besetzers wird gehisst. Gefechtstürme feuern bereits ab 500 Meter Entfernung auf deinen Panzer. Die eigene Schussreichweite deines Panzers liegt bei 400 Metern. Um eine Stadt wieder zu befreien, musst du alle Gefechtstürme rund um die Stadt zerstören.
+
+* Die Spielelemente:
+- Erste-Hilfe-Kasten - Jeder eingesammelte Erste-Hilfe-Kasten repariert 5 Schadenspunkte.
+- Benzintropf - Dein Panzer verbraucht Sprit und muss immer wieder nachtanken. Ein Kanister liefert 10 Liter Treibstoff (Tankinhalt - 1000 Liter).
+- Panzer - Gegnerische Panzer eröffnen das Feuer ab einer Reichweite von 200 Metern.
+- Städte.
+
+Alle Sammelobjekte, welche nicht innerhalb von 15 Minuten eingesammelt werden, werden an einem anderen Ort durch Flugzeuge neu platziert (zum Beispiel Objekte auf bestehenden Gebäuden oder anderen unzugänglichen Orten).
+
+* Sicherheitshinweise:
+Das Spiel in der realen Welt beinhaltet die Tatsache, dass du nicht alleine bist. Achte immer auf deine Umgebung, sei es die Verkehrssituation, andere Passanten oder Fahrradfahrer. Der Fokus sollte in erster Linie diesen Gefahrenquellen gelten.
+
+Vielen Dank für deine Teilnahme im Kampf für die Freiheit und Unabhängigkeit.";

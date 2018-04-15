@@ -1,0 +1,55 @@
+/******************************************************************************/
+/*                                                                            */
+/*  Putination                                                                */
+/*                                                                            */
+/*  Copyright (c) 2014 Meine Werke. All rights reserved.                      */
+/*                                                                            */
+/******************************************************************************/
+
+"GAME_DESCRIPTION_CITY_TITLE" = "City";
+"GAME_DESCRIPTION_CITY" =
+"Opponent's tanks are moving towards your cities to capture them. Try to stop and destroy the tanks of your opponent before they reach their destination. Once your city is captured, there will be a turret tower build near it and the flag of the occupant will be hoisted.
+
+To liberate a city again you have to destroy all the turrets around the city.
+
+The game is over once all cities are captured by your opponent.";
+
+"GAME_DESCRIPTION_PLAYER_TITLE" = "Your tank";
+"GAME_DESCRIPTION_PLAYER" =
+"To let your tank move through the terrain you need to go (or run or even drive) in the appropriate direction - your tank will move in the virtual reality only if you move in the real world.
+
+In order to judge the cannon to the target you need to rotate your iPhone/iPad in the real world accordingly.
+
+The own firing range of your tank is 400 meters.";
+
+"GAME_DESCRIPTION_THEIR_TANK_TITLE" = "Opponent's tank";
+"GAME_DESCRIPTION_THEIR_TANK" =
+"One hit in the chassis would stop the opponent's tank. The hit tank will not move any more, but can still shoot. In order to completely destroy the tank a second shot into the tower is necessary.
+
+Opponent's tanks are able to catch a target (your tank) from a range of 200 meters and fire every 8..10 seconds.";
+
+"GAME_DESCRIPTION_TURRET_TITLE" = "Turret";
+"GAME_DESCRIPTION_TURRET" =
+"Тurrets are able to catch a target (your tank) from a range of almost 500 meters and fire every 8..10 seconds.";
+
+"GAME_DESCRIPTION_EMERGENCY_BOX_TITLE" = "First aid box";
+"GAME_DESCRIPTION_EMERGENCY_BOX" =
+"Each collected first aid box repairs damage of 5 missiles.";
+
+"GAME_DESCRIPTION_FUEL_CANISTER_TITLE" = "Fuel canister";
+"GAME_DESCRIPTION_FUEL_CANISTER" =
+"Your tank consumes fuel and must refuel from time to time. At the beginning of a game your tank is fueled with only 50 liters. This is not that much, therefore you should collect as much fuel on terrain as possible.
+
+Fuel tank capacity - 1000 liters.
+
+One canister delivers 10 liters of fuel.";
+
+"GAME_DESCRIPTION_ARMORY_BOX_TITLE" = "Ammunition set";
+"GAME_DESCRIPTION_ARMORY_BOX" =
+"Each box contains 10 units of ammunition.";
+
+"GAME_DESCRIPTION_SUPPLY_AIRCRAFT_TITLE" = "Supply aircraft";
+"GAME_DESCRIPTION_SUPPLY_AIRCRAFT" =
+"Air Force provides you with everything you can need for a long fight. From the air they deliver first-aid-kit, fuel and ammunition.
+
+All bonus objects that are not collected within 15 minutes, will be moved to a different location by supply aircraft (for example, objects which are in existing buildings or other inaccessible locations).";

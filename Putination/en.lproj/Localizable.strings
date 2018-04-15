@@ -1,0 +1,18 @@
+/******************************************************************************/
+/*                                                                            */
+/*  Putination                                                                */
+/*                                                                            */
+/*  Copyright (c) 2014 Meine Werke. All rights reserved.                      */
+/*                                                                            */
+/******************************************************************************/
+
+"GAME_TITLE"                    = "«Hot War I»";
+"GAME_SUBTITLE"                 = "In a virtual reality ... or in a real world?";
+
+"START_GAME"                    = "To the battlefield";
+
+"GAME_OVER_BECAUSE_OF_LIFE"     = "Out of life!";
+"GAME_OVER_BECAUSE_OF_FUEL"     = "Out of fuel!";
+"GAME_OVER_ALL_CITIES_CAPTURED" = "«They» have captured all your cities!";
+"GAME_OVER_MESSAGE"             = "The game is over when: all cities are lost, your tank is destroyed, your tank has run out of fuel.";
+"GAME_OVER_BUTTON_LABEL"        = "OK";

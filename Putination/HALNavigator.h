@@ -1,7 +1,7 @@
 //
 //  Putination
 //
-//  Copyright (c) 2014 Meine Werke. All rights reserved.
+//  Copyright © 2014-2019 Meine Werke. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

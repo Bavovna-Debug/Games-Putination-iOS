@@ -44,15 +44,15 @@
     if (self == nil)
         return nil;
     
-    CGFloat fieldSize = 1200.0f;
+    CGFloat fieldSize = BattleFieldSize;
     self.playAreaSize = CGSizeMake(fieldSize, fieldSize);
 
-    self.numberOfCities = 40;
-    self.numberOfVehicles = 40;
-    self.numberOfSupplyAirplanes = 2;
-    self.numberOfEmergencyBoxes = 50;
-    self.numberOfFuelCanisters = 50;
-    self.numberOfArmoryBoxes = 50;
+    self.numberOfCities             = NumberOfCities;
+    self.numberOfVehicles           = NumberOfVehicles;
+    self.numberOfSupplyAirplanes    = NumberOfSupplyAirplanes;
+    self.numberOfEmergencyBoxes     = NumberOfEmergencyBoxes;
+    self.numberOfFuelCanisters      = NumberOfFuelCanisters;
+    self.numberOfArmoryBoxes        = NumberOfArmoryBoxes;
 
     self.radarTimer = nil;
     

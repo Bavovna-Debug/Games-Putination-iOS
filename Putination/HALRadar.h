@@ -9,7 +9,14 @@
 #import "HALBouy.h"
 #import "HALRadarView.h"
 
-#define MAX_BULLETS_ON_RADAR 50
+#define BattleFieldSize         1200.0f
+#define NumberOfCities          40
+#define NumberOfVehicles        80
+#define NumberOfSupplyAirplanes 2
+#define NumberOfEmergencyBoxes  60
+#define NumberOfFuelCanisters   60
+#define NumberOfArmoryBoxes     60
+#define MaxBulletsOnRadar       80
 
 @interface HALRadar : NSObject
 

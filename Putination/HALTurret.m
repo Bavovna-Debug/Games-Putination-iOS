@@ -193,7 +193,7 @@
         return;
     
     HALBouyPool *bouyPool = [HALBouyPool sharedBouyPool];
-    if ([[bouyPool bullets] count] >= MAX_BULLETS_ON_RADAR)
+    if ([[bouyPool bullets] count] >= MaxBulletsOnRadar)
         return;
     
     HALNavigator *navigator = [HALNavigator sharedNavigator];

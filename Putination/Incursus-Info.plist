@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>de_DE</string>
 	<key>CFBundleDisplayName</key>
-	<string>Incursus</string>
+	<string>Putination</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -25,7 +25,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Meine Werke. All rights reserved.</string>
+	<string>Copyright © 2014-2019 Meine Werke. All rights reserved.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Augmented reality app requires access to GPS.</string>
 	<key>UILaunchStoryboardName</key>

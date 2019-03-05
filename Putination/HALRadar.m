@@ -44,11 +44,11 @@
     if (self == nil)
         return nil;
     
-    CGFloat fieldSize = 1200;
+    CGFloat fieldSize = 1200.0f;
     self.playAreaSize = CGSizeMake(fieldSize, fieldSize);
 
-    self.numberOfCities = 12;
-    self.numberOfVehicles = self.numberOfCities * 3;
+    self.numberOfCities = 40;
+    self.numberOfVehicles = 40;
     self.numberOfSupplyAirplanes = 2;
     self.numberOfEmergencyBoxes = 50;
     self.numberOfFuelCanisters = 50;

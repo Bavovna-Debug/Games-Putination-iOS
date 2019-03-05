@@ -65,66 +65,66 @@
     CGRect schemaButtonRect;
     CGRect fireButtonRect;
 
-    NSString *deviceVersion = [[UIDevice currentDevice] systemVersion];
-    
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    CGFloat statusBar;
-    if ([deviceVersion floatValue] < 7.0f) {
-        statusBar = 0;
-    } else {
-        statusBar = 20;
-    }
+    CGFloat statusBar = 0.0f;
 
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        healthPanelRect = CGRectMake(0,
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        healthPanelRect = CGRectMake(0.0f,
                                      statusBar,
-                                     768,
-                                     32);
-        armoryPanelRect = CGRectMake(0,
-                                     statusBar + 32,
-                                     768,
-                                     48);
-        radarRect = CGRectMake(0,
-                               statusBar + 80,
-                               768,
-                               1024 - statusBar - 32 - 48);
-        exitButtonRect = CGRectMake(32,
-                                    screenSize.height - 32 - 128,
-                                    128,
-                                    128);
-        schemaButtonRect = CGRectMake(608,
-                                      screenSize.height - 32 - 128,
-                                      128,
-                                      128);
-        fireButtonRect = CGRectMake(256,
-                                    screenSize.height - 32 - 128,
-                                    256,
-                                    128);
-    } else {
-        healthPanelRect = CGRectMake(0,
+                                     CGRectGetWidth(self.view.frame),
+                                     32.0f);
+        armoryPanelRect = CGRectMake(0.0f,
+                                     statusBar + 32.0f,
+                                     CGRectGetWidth(self.view.frame),
+                                     48.0f);
+        radarRect = CGRectMake(0.0f,
+                               statusBar + 80.0f,
+                               CGRectGetWidth(self.view.frame),
+                               CGRectGetHeight(self.view.frame) - statusBar - 32.0f - 48.0f);
+        exitButtonRect = CGRectMake((CGRectGetWidth(self.view.frame) / 2.0f) - 288.0f,
+                                    CGRectGetHeight(self.view.frame) - 32.0f - 128.0f,
+                                    128.0f,
+                                    128.0f);
+        schemaButtonRect = CGRectMake((CGRectGetWidth(self.view.frame) / 2.0f) + 160.0f,
+                                      CGRectGetHeight(self.view.frame) - 32.0f - 128.0f,
+                                      128.0f,
+                                      128.0f);
+        fireButtonRect = CGRectMake((CGRectGetWidth(self.view.frame) / 2.0f) - 128.0f,
+                                    CGRectGetHeight(self.view.frame) - 32.0f - 128.0f,
+                                    256.0f,
+                                    128.0f);
+    }
+    else
+    {
+        CGFloat screenHeight = CGRectGetHeight(UIScreen.mainScreen.nativeBounds);
+        if ((screenHeight != 1136) && (screenHeight != 1334) && (screenHeight != 1920) && (screenHeight != 2208))
+            statusBar += 36.0f;
+
+        healthPanelRect = CGRectMake(0.0f,
                                      statusBar,
-                                     320,
-                                     24);
-        armoryPanelRect = CGRectMake(0,
-                                     statusBar + 24,
-                                     320,
-                                     24);
-        radarRect = CGRectMake(0,
-                               statusBar + 48,
-                               320,
-                               screenSize.height - statusBar - 24 - 24);
-        exitButtonRect = CGRectMake(16,
-                                    screenSize.height - 16 - 64,
-                                    64,
-                                    64);
-        schemaButtonRect = CGRectMake(240,
-                                      screenSize.height - 16 - 64,
-                                      64,
-                                      64);
-        fireButtonRect = CGRectMake(96,
-                                    screenSize.height - 16 - 64,
-                                    128,
-                                    64);
+                                     CGRectGetWidth(self.view.frame),
+                                     24.0f);
+        armoryPanelRect = CGRectMake(0.0f,
+                                     statusBar + 24.0f,
+                                     CGRectGetWidth(self.view.frame),
+                                     24.0f);
+        radarRect = CGRectMake(0.0f,
+                               statusBar + 24.0f + 24.0f,
+                               CGRectGetWidth(self.view.frame),
+                               CGRectGetHeight(self.view.frame) - statusBar - 24.0f - 24.0f);
+
+        exitButtonRect = CGRectMake((CGRectGetWidth(self.view.frame) / 2.0f) - 144.0f,
+                                    CGRectGetHeight(self.view.frame) - 16.0f - 64.0f,
+                                    64.0f,
+                                    64.0f);
+        schemaButtonRect = CGRectMake((CGRectGetWidth(self.view.frame) / 2.0f) + 80.0f,
+                                      CGRectGetHeight(self.view.frame) - 16.0f - 64.0f,
+                                      64.0f,
+                                      64.0f);
+        fireButtonRect = CGRectMake((CGRectGetWidth(self.view.frame) / 2.0f) - 64.0f,
+                                    CGRectGetHeight(self.view.frame) - 16.0f - 64.0f,
+                                    128.0f,
+                                    64.0f);
     }
     
     self.healthViewPanel = [[HALHealthViewPanel alloc] initWithFrame:healthPanelRect];
@@ -244,12 +244,10 @@
     {
         case HALSchemaDay:
             [self.radarViewPanel setBackgroundColor:[UIColor whiteColor]];
-            [[UIApplication sharedApplication] setStatusBarHidden:YES];
             break;
             
         case HALSchemaNight:
             [self.radarViewPanel setBackgroundColor:[UIColor blackColor]];
-            [[UIApplication sharedApplication] setStatusBarHidden:YES];
             break;
     }
 
@@ -269,6 +267,26 @@
     [self.radarViewPanel setBackgroundColor:normalColor];
     
     [UIView commitAnimations];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        return YES;
+    }
+    else
+    {
+        CGFloat screenHeight = CGRectGetHeight(UIScreen.mainScreen.nativeBounds);
+        if ((screenHeight == 1136) || (screenHeight == 1334) || (screenHeight == 1920) || (screenHeight == 2208))
+        {
+            return YES;
+        }
+        else
+        {
+            return NO;
+        }
+    }
 }
 
 @end

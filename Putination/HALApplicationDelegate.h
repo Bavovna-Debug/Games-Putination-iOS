@@ -11,7 +11,8 @@ typedef enum
     HALGameOverReasonLife,
     HALGameOverReasonFuel,
     HALGameOverReasonOccupation
-} HALGameOverReason;
+}
+HALGameOverReason;
 
 @interface HALApplicationDelegate : UIResponder
 

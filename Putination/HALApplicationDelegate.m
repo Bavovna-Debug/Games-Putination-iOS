@@ -23,9 +23,10 @@
 @synthesize mainViewController = _mainViewController;
 @synthesize radarViewController = _radarViewController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [application setStatusBarHidden:NO];
+    //[application setStatusBarHidden:NO];
 
     [application setIdleTimerDisabled:YES];
 
@@ -40,10 +41,7 @@
                                           alpha:1.0f];
     }
 
-    CGRect bounds = [[UIScreen mainScreen] bounds];
-    
-    self.window = [[UIWindow alloc] initWithFrame:bounds];
-    [self.window.viewForBaselineLayout setBackgroundColor:backgroundColor];
+    [[HALNavigator sharedNavigator] startNavigation];
 
     self.mainViewController = [[HALMainViewController alloc] init];
     [self.mainViewController.view setBackgroundColor:backgroundColor];
@@ -51,12 +49,6 @@
     self.radarViewController = [[HALRadarViewController alloc] init];
     [self.radarViewController.view setBackgroundColor:backgroundColor];
 
-    self.window.rootViewController = self.mainViewController;
-
-    [self.window makeKeyAndVisible];
-
-    [[HALNavigator sharedNavigator] startNavigation];
-    
     return YES;
 }
 

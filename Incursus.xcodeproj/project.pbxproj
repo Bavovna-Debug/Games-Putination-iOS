@@ -46,6 +46,7 @@
 		948AAAFA18E9A5B400FFF7A0 /* Description.strings in Resources */ = {isa = PBXBuildFile; fileRef = 948AAAFC18E9A5B400FFF7A0 /* Description.strings */; };
 		948D85F718F3C91C00DDDB5A /* HALIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948D85F618F3C91C00DDDB5A /* HALIntroductionViewController.m */; };
 		948D85FA18F3C94F00DDDB5A /* HALHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948D85F918F3C94F00DDDB5A /* HALHelpViewController.m */; };
+		94AC45A1222C4F4800523483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AC45A0222C4F4800523483 /* Main.storyboard */; };
 		94ADF93118DA0E0900E45F3B /* HALHealthViewPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ADF93018DA0E0900E45F3B /* HALHealthViewPanel.m */; };
 		94B2A10B18DF589E009EEF5C /* HALTurret.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B2A10A18DF589E009EEF5C /* HALTurret.m */; };
 		94B4521518DC4F5D00CAEB9F /* HALCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B4521418DC4F5D00CAEB9F /* HALCity.m */; };
@@ -168,6 +169,7 @@
 		948D85F618F3C91C00DDDB5A /* HALIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALIntroductionViewController.m; sourceTree = "<group>"; };
 		948D85F818F3C94F00DDDB5A /* HALHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALHelpViewController.h; sourceTree = "<group>"; };
 		948D85F918F3C94F00DDDB5A /* HALHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALHelpViewController.m; sourceTree = "<group>"; };
+		94AC45A0222C4F4800523483 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		94ADF92F18DA0E0900E45F3B /* HALHealthViewPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALHealthViewPanel.h; sourceTree = "<group>"; };
 		94ADF93018DA0E0900E45F3B /* HALHealthViewPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALHealthViewPanel.m; sourceTree = "<group>"; };
 		94B2A10918DF589E009EEF5C /* HALTurret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALTurret.h; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				94AD97CA18EFEDBE0001C695 /* Bouys */,
 				947FF55918CE59E400E6DE03 /* Images.xcassets */,
 				947FF54E18CE59E400E6DE03 /* Supporting Files */,
+				94AC45A0222C4F4800523483 /* Main.storyboard */,
 			);
 			name = Incursus;
 			path = Putination;
@@ -577,7 +580,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HAL;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Maxim Shchetynin";
 				TargetAttributes = {
 					947FF54318CE59E400E6DE03 = {
@@ -625,6 +628,7 @@
 				94EE53A918E821E000DE39F4 /* CannonBullet.png in Resources */,
 				94EE53C118E8222E00DE39F4 /* EmergencyBoxBaloon.png in Resources */,
 				94EE53AD18E821F100DE39F4 /* TankCannon.png in Resources */,
+				94AC45A1222C4F4800523483 /* Main.storyboard in Resources */,
 				9417DC3518F48B1400A5B941 /* PageLeft.png in Resources */,
 				94EE53C318E8222E00DE39F4 /* FuelCanisterBaloon.png in Resources */,
 				947FF55218CE59E400E6DE03 /* Localizable.strings in Resources */,
@@ -772,24 +776,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -802,8 +820,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -814,31 +832,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -849,15 +880,15 @@
 		947FF57118CE59E400E6DE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon 2019";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Putination/Incursus-Prefix.pch";
 				INFOPLIST_FILE = "Putination/Incursus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zeppelinium.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Incursus;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -867,15 +898,15 @@
 		947FF57218CE59E400E6DE03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon 2019";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Putination/Incursus-Prefix.pch";
 				INFOPLIST_FILE = "Putination/Incursus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zeppelinium.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Incursus;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -898,6 +929,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "PutinationTests/IncursusTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zeppelinium.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = IncursusTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -916,6 +948,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Putination/Putination-Prefix.pch";
 				INFOPLIST_FILE = "PutinationTests/IncursusTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zeppelinium.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = IncursusTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

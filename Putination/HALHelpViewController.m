@@ -96,11 +96,21 @@
     [imageView setImage:image];
  
     CGRect nameFrame = memoFrame;
-    
+    NSAttributedString *attributedText;
+
+#if 0
     nameFrame.size = [name sizeWithFont:nameFont
                       constrainedToSize:CGSizeMake(nameFrame.size.width, CGFLOAT_MAX)
                           lineBreakMode:NSLineBreakByWordWrapping];
-    
+#else
+    attributedText = [[NSAttributedString alloc] initWithString:name
+                                                     attributes:@{NSFontAttributeName:nameFont}];
+    CGRect nameRect = [attributedText boundingRectWithSize:CGSizeMake(CGRectGetWidth(nameFrame), CGFLOAT_MAX)
+                                                   options:NSStringDrawingUsesLineFragmentOrigin
+                                                   context:nil];
+    nameFrame.size = nameRect.size;
+#endif
+
     UILabel *nameLabel = [[UILabel alloc] initWithFrame:nameFrame];
     [nameLabel setText:name];
     [nameLabel setFont:nameFont];
@@ -109,11 +119,20 @@
     [nameLabel setNumberOfLines:0];
     
     memoFrame.origin.y += nameFrame.size.height;
-    
+
+#if 0
     memoFrame.size = [memo sizeWithFont:memoFont
                       constrainedToSize:CGSizeMake(memoFrame.size.width, CGFLOAT_MAX)
                           lineBreakMode:NSLineBreakByWordWrapping];
-    
+#else
+    attributedText = [[NSAttributedString alloc] initWithString:memo
+                                                     attributes:@{NSFontAttributeName:memoFont}];
+    CGRect memoRect = [attributedText boundingRectWithSize:CGSizeMake(CGRectGetWidth(memoFrame), CGFLOAT_MAX)
+                                                   options:NSStringDrawingUsesLineFragmentOrigin
+                                                   context:nil];
+    memoFrame.size = memoRect.size;
+#endif
+
     UILabel *memoLabel = [[UILabel alloc] initWithFrame:memoFrame];
     [memoLabel setText:memo];
     [memoLabel setFont:memoFont];

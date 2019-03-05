@@ -62,10 +62,22 @@
                                   self.applicationFrame.size.width - 2 * margin,
                                   0);
     CGSize textRequiredSize;
-    
+    CGRect textBounds;
+    NSAttributedString *attributedText;
+
+#if 0
     textRequiredSize = [gameTitleText sizeWithFont:gameTitleFont
                                  constrainedToSize:CGSizeMake(textFrame.size.width, CGFLOAT_MAX)
                                      lineBreakMode:NSLineBreakByWordWrapping];
+#else
+    attributedText = [[NSAttributedString alloc] initWithString:gameTitleText
+                                                     attributes:@{NSFontAttributeName: gameTitleFont}];
+    textBounds = [attributedText boundingRectWithSize:CGSizeMake(CGRectGetWidth(textFrame), CGFLOAT_MAX)
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                              context:nil];
+
+    textRequiredSize = textBounds.size;
+#endif
     textFrame.size.height = textRequiredSize.height;
     
     gameTitleLabel = [[UILabel alloc] initWithFrame:textFrame];
@@ -77,10 +89,20 @@
     [gameTitleLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     
     textFrame.origin.y += textFrame.size.height + margin;
-    
+
+#if 0
     textRequiredSize = [gameSubtitleText sizeWithFont:gameSubtitleFont
                                     constrainedToSize:CGSizeMake(textFrame.size.width, CGFLOAT_MAX)
                                         lineBreakMode:NSLineBreakByWordWrapping];
+#else
+    attributedText = [[NSAttributedString alloc] initWithString:gameSubtitleText
+                                                     attributes:@{NSFontAttributeName: gameSubtitleFont}];
+    textBounds = [attributedText boundingRectWithSize:CGSizeMake(CGRectGetWidth(textFrame), CGFLOAT_MAX)
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                              context:nil];
+
+    textRequiredSize = textBounds.size;
+#endif
     textFrame.size.height = textRequiredSize.height;
 
     gameSubtitleLabel = [[UILabel alloc] initWithFrame:textFrame];
@@ -92,10 +114,20 @@
     [gameSubtitleLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     
     textFrame.origin.y += textFrame.size.height + margin;
-    
+
+#if 0
     textRequiredSize = [gameDescriptionText sizeWithFont:gameDescriptionFont
                                        constrainedToSize:CGSizeMake(textFrame.size.width, CGFLOAT_MAX)
                                            lineBreakMode:NSLineBreakByWordWrapping];
+#else
+    attributedText = [[NSAttributedString alloc] initWithString:gameDescriptionText
+                                                     attributes:@{NSFontAttributeName: gameDescriptionFont}];
+    textBounds = [attributedText boundingRectWithSize:CGSizeMake(CGRectGetWidth(textFrame), CGFLOAT_MAX)
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                              context:nil];
+
+    textRequiredSize = textBounds.size;
+#endif
     textFrame.size.height = textRequiredSize.height;
 
     introductionTextLabel = [[UILabel alloc] initWithFrame:textFrame];

@@ -33,9 +33,10 @@
     
     self.helpViewController = [[HALHelpViewController alloc] init];
     
-    self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
-                                                          navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
-                                                                        options:nil];
+    self.pageController =
+    [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
+                                    navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+                                                  options:nil];
     
     self.pageController.dataSource = self;
     

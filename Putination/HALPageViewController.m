@@ -27,13 +27,6 @@
     assert(self.pageNavigationView == nil);
 
     CGRect bounds = [[UIScreen mainScreen] bounds];
-#if 0
-    NSString *deviceVersion = [[UIDevice currentDevice] systemVersion];
-    if ([deviceVersion floatValue] >= 7.0f) {
-        bounds.origin.y += 32.0f;
-    }
-    bounds.size.height -= 32.0f;
-#endif
 
     CGFloat navigationHeight = 80.0f;
     
